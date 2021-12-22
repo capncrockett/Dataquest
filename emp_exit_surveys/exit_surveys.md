@@ -69,3 +69,12 @@ One of the quesitons we are trying to answer revolves around the reasons for res
 * From what I can tell there will only be 273 rows that we can actually use.  
 * Vectorized operations will only work on non-null values so our new column will have NaN value for any rows that do not contain both a start and cease year.  
 
+
+## Consolidating
+
+### Dissatisfied or Not
+
+We're going to create a new column based on the constibuting factors for resignation.
+* DETE has a large handful that could fall under the category of "Dissatisfied".
+
+* TAFE has just two options and both use the term "dissatisfaction".
