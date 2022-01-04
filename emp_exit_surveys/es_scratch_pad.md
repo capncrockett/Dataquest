@@ -70,11 +70,31 @@ One of the quesitons we are trying to answer revolves around the reasons for res
 * Vectorized operations will only work on non-null values so our new column will have NaN value for any rows that do not contain both a start and cease year.  
 
 
-## Consolidating
-
 ### Dissatisfied or Not
 
-We're going to create a new column based on the constibuting factors for resignation.
-* DETE has a large handful that could fall under the category of "Dissatisfied".
+We're going to create a new column based on the contributing factors for resignation. 
 
-* TAFE has just two options and both use the term "dissatisfaction".
+TAFE has just two options and both use the term "dissatisfaction"
+* `Contributing Factors. Dissatisfaction`
+* `Contributing Factors. Job Dissatisfaction`  
+
+DETE has a large handful that could fall under the category of "Dissatisfied".
+* `job_dissatisfaction`
+* `dissatisfaction_with_the_department`
+* `physical_work_environment`
+* `lack_of_recognition`
+* `lack_of_job_security`
+* `work_location`
+* `employment_conditions`
+* `work_life_balance`
+* `workload`
+
+Dete doesn't appear to have any NaN values which is really helpful.  
+
+
+
+## Merging Dataframes
+
+* Let's start by adding a new column named `institute` so that we can keep track of both datasets.  
+* We'll concatenate along the `rows` axis which will easily combine all the `columns` in common.  
+* Let's also drop all columns with less than 500 non null values.  
