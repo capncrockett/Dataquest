@@ -107,3 +107,22 @@ Dete doesn't appear to have any NaN values which is really helpful.
 * Experienced: 3-6 years at a company
 * Established: 7-10 years at a company
 * Veteran: 11 or more years at a company
+
+
+2012       126
+2013        74
+01/2014     22
+12/2013     17
+06/2013     14
+09/2013     11
+07/2013      9
+11/2013      9
+10/2013      6
+08/2013      4
+05/2012      2
+05/2013      2
+09/2010      1
+07/2006      1
+07/2012      1
+2010         1
+Name: cease_date, dtype: int64
