@@ -98,54 +98,12 @@ Dete doesn't appear to have any NaN values which is really helpful.
 * Let's start by adding a new column named `institute` so that we can keep track of both datasets.  
 * We'll concatenate along the `rows` axis which will easily combine all the `columns` in common.  
 * Let's also drop all columns with less than 500 non null values.  
-49.0                   1
-41.0                   1
-31.0                   1
-33.0                   1
-38.0                   1
-34.0                   1
-29.0                   1
-35.0                   1
-27.0                   1
-42.0                   1
-25.0                   2
-36.0                   2
-30.0                   2
-28.0                   2
-26.0                   2
-39.0                   3
-32.0                   3
-21.0                   3
-19.0                   3
-24.0                   4
-11.0                   4
-23.0                   4
-16.0                   5
-18.0                   5
-10.0                   6
-17.0                   6
-14.0                   6
-12.0                   6
-22.0                   6
-15.0                   7
-20.0                   7
-13.0                   8
-8.0                    8
-More than 20 years    10
-7.0                   13
-2.0                   14
-9.0                   14
-4.0                   16
-6.0                   17
-0.0                   20
-3.0                   20
-7-10                  21
-1.0                   22
-5.0                   23
-11-20                 26
-5-6                   33
-3-4                   63
-1-2                   64
-Less than 1 year      73
-nan                   88
-Name: institute_service, dtype: int64
+
+
+
+#### We're going to use four categories to sort our employees.
+
+* New: Less than 3 years at a company
+* Experienced: 3-6 years at a company
+* Established: 7-10 years at a company
+* Veteran: 11 or more years at a company
